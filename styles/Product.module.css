@@ -1,0 +1,131 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+}
+
+.left {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+}
+
+.imgContainer {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.price {
+  font-size: 24px;
+  color: brown;
+  font-weight: 500;
+  border-bottom: 1px solid brown;
+}
+
+.size {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sizes {
+  width: 40%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.size:nth-child(2) {
+  height: 40px;
+  width: 40px;
+}
+
+.size:nth-child(3) {
+  height: 50px;
+  width: 50px;
+}
+
+.number {
+  display: flex;
+  top: -5px;
+  right: -5px;
+  background-color: rgb(15, 75, 75);
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 0 5px;
+  position: absolute;
+}
+
+.ingredients {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.quantity {
+  height: 30px;
+  width: 65px;
+}
+
+.addCart {
+  height: 30px;
+  width: 60px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 15px;
+  cursor : pointer
+}
+
+@media screen and (max-width: 480px){
+  .container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imgContainer {
+    width: 70vw;
+    height: 70vw;
+    margin: 18px 0;
+  }
+
+  .desc {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .sizes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .addCart {
+    margin: 18px 0;
+  }
+}
